@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>main page</title>
+</head>
+
+<!-- stylling sheet -->
+
+<style>
+
+.header-bg {
+  /* Wave Color */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+  background: #75c718;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #afee4a 0%, #1095a7 52%, #29ee81 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #cbeb59 0%, #4293c2 52%, #13cf87 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #aceb59 0%, #2aa1e6 52%, #0ea36a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  background-size: 350% 350%;
+  animation: waveColors 6s ease infinite;
+  /* End Wave Color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+.header-heading{
+  text-align: center;
+  color: rgb(21, 124, 21);
+  font-size: 60px;
+  margin: 30px;
+  padding: 30px;
+}
+
+.header-sub{
+  text-align: center;
+  color: rgb(209, 226, 50);
+  font-size: 30px;
+}
+
+/* Animation Wave Color */
+
+@-webkit-keyframes waveColors {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@keyframes waveColors {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+/* side bar styling */
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(103, 169, 231);
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fefffdf8;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #d3e056;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(216, 93, 179);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #444242;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+
+/* reference styling */
+.refrences{
+  padding: 100px;
+  margin: 80px;
+  
+}
+.refrences-coloumns{
+  column-width: 30em;
+  margin-top: 20px;
+
+}
+
+</style>
+
+<!-- content -->
+
+<body>
+
+  <!-- header -->
+
+  <header>
+    <div class="header-bg">
+      <div class="header-content">
+      <h1 class="header-heading"><b>Ａｙｕｒｖｅｄａ</b></h1>
+      <p class="header-sub">𝕋𝕙𝕖 𝕄𝕠𝕥𝕙𝕖𝕣 𝕆𝕗 𝔸𝕝𝕝 ℍ𝕖𝕒𝕝𝕚𝕟𝕘𝕤</p>
+    </div>
+  </div> 
+ </header>
+
+ <!-- main section -->
+ 
+ <!-- upper portion -->
+ <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+    </div>
+
+    <!-- sidebar code -->
+    <div class="sidenav">
+  
+      <button class="dropdown-btn">AYURVEDA
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="https://www.nhp.gov.in/introduction_mtl">Basics</a>
+        <a href="https://vikaspedia.in/health/ayush/ayurveda-1/national-ayurveda-day">National Ayurveda Day</a>
+        <a href="https://vikaspedia.in/health/ayush/ayurveda-1/panchakarma#:~:text=Panchakarma%20is%20a%20method%20of,promotive%20actions%20for%20various%20diseases.">Panchkarma</a>
+        <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/home-remedies">Home Remedies</a>
+        <a href="https://vikaspedia.in/energy/environment/know-your-environment/medicinal-plants">Ayurvedic Medicinal Plants</a>
+      </div>
+      <a href="https://artsandculture.google.com/exhibit/ayurveda-indian-contributions-to-medicine-national-council-of-science-museums/dQICeAS1BHX5Jw?hl=en">Contribution to ayurveda</a>
+      <a href="https://vikaspedia.in/health/nutrition">Nutrition</a>
+      <a href="https://vikaspedia.in/health/child-health">Child Health</a>
+      <a href="https://www.yogajournal.com/lifestyle/health/ayurvedic-first-aid-kit/">first-aid</a>
+      <a href="https://vikaspedia.in/health/women-health">Women Health</a>
+      <button class="dropdown-btn">AYUSH
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="https://vikaspedia.in/health/ayush/home-herbal-remedies-primary-health-care">Primary Health Care</a>
+        <a href="https://vikaspedia.in/health/ayush/homoeopathy-for-bronchial-asthma-in-children">Homeopathy for Bronchial Asthma in Children</a>
+        <a href="https://vikaspedia.in/health/ayush/sowa-rigpa">SOWA-RIGPA system of medicine</a>
+        <a href="https://vikaspedia.in/health/ayush/guidelines-for-ayush-practitioners-for-covid-19/guidelines-for-ayurveda-practitioners-for-covid19">Guidelines for COVID-19</a>
+      </div>
+      <a href="https://vikaspedia.in/health/ayush/yoga-1">Yoga</a>
+    </div>
+
+<!-- main content -->
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-4xl text-4xl font-medium title-font mb-4 text-gray-900">What it is ?</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-900">Ayurveda, also called Ayurvedic medicine, traditional system of Indian medicine. Ayurvedic medicine is an example of a well-organized system of traditional health care, both preventive and curative, that is widely practiced in parts of Asia. Ayurveda has a long tradition behind it, having originated in India perhaps as much as 3,000 years ago. Today it remains a favoured form of health care in large parts of the Eastern world, especially in India, where a large percentage of the population uses this system exclusively or combined with modern medicine.</p>
+      </div>
+    <div class="flex flex-wrap">
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Beginning in INDIA</h2>
+        <p class="leading-relaxed text-base mb-4">The Indian Medical Council was set up in 1971 by the Indian government to establish maintenance of standards for undergraduate and postgraduate education. It establishes suitable qualifications in various forms of traditional practice including Ayurveda, Unani, and Siddha.</p>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">History</h2>
+        <p class="leading-relaxed text-base mb-4">Ayurveda is attributed to Dhanvantari, the physician to the gods in Hindu mythology, who received it from Brahma. Its earliest concepts were set out in the portion of the Vedas known as the Atharvaveda (c. 2nd millennium BCE). The period of Vedic medicine lasted until about 800 BCE.</p>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The golden age</h2>
+        <p class="leading-relaxed text-base mb-4">The golden age of Indian medicine, from 800 BCE until about 1000 CE, was marked especially by the production of the medical treatises known as the Caraka-samhita and Susruta-samhita, attributed respectively to Caraka, a physician, and Susruta, a surgeon.</p>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Components</h2>
+        <p class="leading-relaxed text-base mb-4">Ayurveda believes five basic elements Pancamahabhutas (space,air,fire,water and earth) manifest in the human body as three basic humours known as tridosas(Vata,Pitta and Kapha). These three govern creation,maintenance and destruction of bodily tissues as well as the assimilation and elimination.</p>
+      </div>
+      <button class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">
+        <a href="https://www.britannica.com/science/Ayurveda">Learn more</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-4xl text-4xl font-medium title-font mb-4 text-blue-700">Ayurveda Doshas</h1><br><br>
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-700 sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10  inline-flex items-center justify-center rounded-full flex-shrink-0 ">
+        <img src="http://3.bp.blogspot.com/_b-OvS_evwJM/S-oGt43PI9I/AAAAAAAAABo/Bk_5ynvdmtg/s1600/ayurveda-vata.jpg" alt="reload page">
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">VATA "that which moves things"</h2>
+        <p class="leading-relaxed text-base">Vata is often referred to as the vayu (wind) in the body, and it is the primary motivating force of the doshas—without it, the other doshas are unable to move.
+            According to ayurveda, vata is responsible for our mental and physical adaptability. It is the energizing force of the body and mind, and it governs our nervous system, our bones, and our senses of touch and hearing.</p>
+        <a class="mt-3 text-red-500 inline-flex items-center" href="https://yogainternational.com/article/view/about-vata">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-700 sm:flex-row flex-col">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">KAPHA "that which binds things"</h2>
+        <p class="leading-relaxed text-base"> According to ayurveda, this is the dosha responsible for the stability, lubrication, substance, and support of our physical body.
+          Kapha supports our emotional calm, our mental and physical endurance, and it allows us to feel deeply, to empathize, and to be patient and compassionate.</p>
+        <a class="mt-3 text-red-500 inline-flex items-center" href="https://yogainternational.com/article/view/about-kapha">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <img src="https://theyogasanctuary.biz/wp-content/uploads/2014/11/kapha-300x292.jpeg" alt="reload page">
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuSX_8qmfz4GFCR5OJrzA3LGvuPnNpxRJ8YGzrG_4pR_wfauMep88oxF59E0TCzxK9Ws&usqp=CAU" alt="reload page">
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">PITTA “that which digests things”</h2>
+        <p class="leading-relaxed text-base">According to ayurveda, this is the dosha responsible for our ability to mentally digest our life experiences and biologically digest our food. Pitta is responsible for all of our chemical and metabolic transformations.</p>
+        <a class="mt-3 text-red-500 inline-flex items-center" href="https://yogainternational.com/article/view/about-pitta">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- visiting -->
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4" >
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-green-200">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://medicaldialogues.in/h-upload/2020/06/05/129857-ministry-of-ayush.webp" alt="reload">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Ayurveda Portal</h1>
+            <p class="leading-relaxed mb-3">This Portal is designed, developed and hosted by Centre for Health Informatics (CHI), set up at National Institute of Health and Family Welfare (NIHFW), by the Ministry of Health and Family Welfare (MoHFW), Government of India.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="http://nhp.gov.in/ayurveda_mty">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-pink-200">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://ayurmade.com/wp-content/uploads/2020/12/ayurvedic-retreats-1.jpg" alt="reload">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top Ayurvedic Centers In INDIA</h1>
+            <p class="leading-relaxed mb-3">when it comes to nature cure and rejuvenation. Yoga, meditation, and Ayurveda form a major part of India's health tourism sectors with Ayurvedic centres located mostly in the states of Kerala, Uttarakhand, and Goa.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://www.indiastudychannel.com/resources/173755-Ayurvedic-Centers-in-India.aspx">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-orange-200">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://www.indiakatop.com/wp-content/uploads/2021/01/ayurvedic-companies-in-india.jpg" alt="reload">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top Ayurvedic Companies</h1>
+            <p class="leading-relaxed mb-3">The interest for the Ayurvedic extend is continually expanding in the market. You will discover various Ayurvedic companies in our country. However, how you’ll recognize which is the best and dependable.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://vibcare.co.in/top-10-ayurvedic-companies-in-india/">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4" >
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-purple-200">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://image.shutterstock.com/image-illustration/meditation-man-aura-seven-chakras-260nw-1322185310.jpg" alt="reload">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Best Yoga Asanas To stay Fit</h1>
+            <p class="leading-relaxed mb-3">Are you always feeling lethargic and tired without any underlying medical condition? A daily 10-minute yoga routine can help you feel more energetic, and help you regain body-mind balance.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://dailyburn.com/life/fitness/yoga-for-beginners-kundalini-yin-bikram/">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-blue-200">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://www.thelist.com/img/gallery/scientifically-proven-natural-remedies/intro-1567196886.jpg" alt="reload">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Home Remedies Everyone Should Know</h1>
+            <p class="leading-relaxed mb-3">Herbal remedies are plants used like a medicine. People use herbal remedies to help prevent or cure disease. They use them to get relief from symptoms, boost energy, relax, or lose weight. Herbals are not regulated or tested like medicines.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://svthw.org/20-home-remedies-everyone-should-know/">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-pink-200">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://5.imimg.com/data5/EM/CH/MY-66962532/bams-direct-admission-in-top-ayurvedic-colleges-in-agra-mathura-250x250.jpg" alt="reload">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top Institutes To study In For Ayurveda</h1>
+            <p class="leading-relaxed mb-3">Ayurveda colleges around the world offer BAMS (Bachelors of Ayurveda and Surgery) graduate degree.Students are taught various ayurveda subjects like Kriya Sharira,Rachana Sharira,Dravyuaguna and Yoga with modern anatomy,physiology,pharmacology,etc. </p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="http://www.thedailyrecords.com/2018-2019-2020-2021/world-famous-top-10-list/world/best-ayurvedic-colleges-world-private-bams/10248/">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+
+<!--diseases-->
+  <div class="flex flex-col text-center w-full mb-20">
+    <h1 class="sm:text-4xl text-4xl font-medium title-font mb-4 text-orange-600"><u>Ayurvedic Treatment Of Diseases</u></h1>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://www.thestatesman.com/wp-content/uploads/2020/02/sa-3.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-pink-500 mt-6 mb-3">Digestive</h2>
+        <p class="leading-relaxed text-base">In Ayurveda, our digestive system is referred to as our agni, or digestive fire. Our agni is the ultimate force of intelligence within our body. According to Ayurveda, a strong agni is essential for health, happiness, vitality, and strength in all areas of our lives.</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.jiva.com/diseases-ayurveda/digestive">Learn more</a></button>
+      </div>
+     
+      <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://anandayurvedic.com/assets/images/endocrine.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-pink-500 mt-6 mb-3">Endocrine</h2>
+          <p class="leading-relaxed text-base">Ayurveda’s comprehensive understanding of endocrinology applies a natural and holistic approach that may significantly help prevent and reduce hormonal challenges.</p>
+          <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.jiva.com/diseases-ayurveda/endocrine">Learn more</a></button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://shuddhi.com/wp-content/uploads/2020/05/Ayurvedic-Treatment-For-Lungs-Infection.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-pink-500 mt-6 mb-3">Respiratory</h2>
+          <p class="leading-relaxed text-base">Respiration is an important physiological process necessary for the ex- istence of life. In Ayurveda the functions of Prana Vayu is held responsible for the pro- cess of respiration in human body. The channels or tracts (Srotas) in which Pranav- ayu flows are called Pranavaha Srotas.</p>
+          <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.jiva.com/diseases-ayurveda/respiratory">Learn more</a></button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://www.practostatic.com/fit/ece46892b73b7faebab891366e1cb0bf36f46348">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-pink-500 mt-6 mb-3">Joint Pain</h2>
+          <p class="leading-relaxed text-base">According to Ayurveda, joint pain occurs due to the imbalance in the functional energy or Dosha in the body, known as Vata. This energy is responsible for movement and spaces, which corresponds to the space between the joints. An imbalance in a form of Vata known as Vyanavata can cause circulation problems.</p>
+          <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.jiva.com/diseases-ayurveda/joint">Learn more</a></button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://blog-images.pharmeasy.in/2020/11/02165915/herbs-for-hair-image.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-pink-500 mt-6 mb-3">Hair and Skin</h2>
+          <p class="leading-relaxed text-base">Ayurveda is now an irreplaceable market in the beauty industry. It emphasises knowing your skin type and providing exactly what it needs.</p>
+          <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.jiva.com/diseases-ayurveda/hair-and-skin">Learn more</a></button>
+          </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div  class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://www.narayanahealth.org/sites/default/files/departments/Obstetrics%20%26%20Gynaecology.png">
+            </div>
+            <h2 class="title-font text-2xl font-medium text-pink-500 mt-6 mb-3">Gynae</h2>
+            <p class="leading-relaxed text-base">A gynaecological disease is a kind of condition which affects the female reproductive organs.Many gynecological issues can likewise be dealt effortlessly by Medicinal Herbs of Ayurveda. </p>
+            <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.jiva.com/diseases-ayurveda/gynae">Learn more</a></button>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- refrences -->
+<div class="refrences">
+  <h2 class="text-3xl"><b>Refrences</b></h2>
+  <hr class="border-2 border-gray-400 border-opacity-60">
+  <div class="refrences-coloumns">
+    <span>
+     <p>1. Definition, History, & Facts | Britannica(www.britannica.com)</p>
+     <p>2. Ayurveda | National Health Portal Of India(www.nhp.gov.in)</p>
+     <p>3. About Pitta: yogainternational.com</p>
+     <p>4. About Kapha: yogainternational.com</p>
+     <p>5. About Vata: yogainternational.com</p>
+     <p>6. www.healthline.com</p>
+     <p>7. Ayurveda - Wikipedia(en.wikipedia.org)</p>
+     <p>8. www.google.com</p>
+     <p>9. medicine.careers360.com</p>
+     <p>10. vibcare.co.in</p>
+     <p>11. www.naturalremedy.com</p>
+     <p>12. 20 Home Remedies Everyone Should Know - SVT Health & Wellness(svthw.org)</p>
+     <p>13. Yoga for Beginners: Your Guide to 9 Most Popular Types of Yoga(dailyburn.com)</p>
+     <p>14. Contribution of Ayurveda in foundation of basic tenets of bioethics(www.ncbi.nlm.nih.gov)</p>
+     <p>15. artsandculture.google.com</p>
+     <p>16. ayurveda medicinal plants - Google Scholar(scholar.google.co.in)</p>
+     <p>17. timesofindia.indiatimes.com</p>
+     <p>18. (www.gktoday.in)</p>
+    </span>
+  </div>
+</div>
+<hr class="border-gray-300">
+
+<!-- javascript -->
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+
+<!-- footer -->
+
+<footer class="text-white body-font">
+  <div>
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <div>
+          <img  width="200" height="300" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          src="https://img.myloview.com/posters/pharmacy-logo-medical-symbols-pure-ayurveda-logo-natural-logo-medical-icon-healthcare-logo-herbal-icon-green-leaf-pharmacy-vector-700-203996516.jpg">
+          </div> 
+          <span class="inline-flex text-green-700 ml-3 text-xl py-12 px-6">Ａｙｕｒｖｅｄａ</span>
+        </a>
+        <nav
+        class="md:mr-auto md:ml-24 md:py-12 md:pl-24 md:border-l md:border-red-400	flex flex-wrap items-center text-base justify-center">
+        <div>
+         <h1 class="text-gray-900"><b>LEGAL</b></h1><br>
+         <p class="text-gray-600">Terms Of Use</p>
+         <p class="text-gray-600">Privacy</p>
+         <p class="text-gray-600">All Services</p>
+        </div>
+        </nav>
+      
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
